@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  background-color: white;
+  height: 55vh;
+  border-radius: 2rem;
+  position: relative; }
+  @media (min-width: 640px) {
+    .card {
+      width: 70%; } }
+  @media (min-width: 768px) {
+    .card {
+      width: 40%;
+      height: 60vh; } }
+  .card__image {
+    height: 35%;
+    background: url("/images/bg-pattern-card.svg") no-repeat;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    background-size: cover; }
+  .card__avatar {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10rem; }
+    @media (min-width: 640px) {
+      .card__avatar {
+        top: 20%;
+        left: 33%; } }
+    .card__avatar-image {
+      border-radius: 10rem;
+      z-index: 50; }
+      @media (min-width: 640px) {
+        .card__avatar-image {
+          width: 20rem; } }
+  .card__title {
+    margin-top: 25%;
+    font-weight: 700;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 2.4rem; }
+    @media (min-width: 640px) {
+      .card__title {
+        font-size: 4rem; } }
+    .card__title-span {
+      font-weight: 400; }
+  .card__location {
+    margin-top: 5%;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 2rem; }
+    @media (min-width: 640px) {
+      .card__location {
+        font-size: 4rem; } }
+  .card__stats {
+    border-top: solid 1px rgba(150, 150, 150, 0.2);
+    align-self: start;
+    width: 100%;
+    margin-top: 5%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around; }
+    .card__stats div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.8rem;
+      font-weight: 700; }
+      @media (min-width: 640px) {
+        .card__stats div {
+          font-size: 3rem; } }
+      .card__stats div p {
+        font-weight: 400;
+        color: #969696; }
+  .card .card__titlepart {
+    display: flex;
+    flex-direction: column;
+    height: 65%;
+    align-items: center; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: #19a2ae; }
+  @media (max-width: 1023px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box; }
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden; }
+
+.attribution {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+  width: 100%; }
+  .attribution a {
+    text-decoration: none;
+    color: white; }
+  @media (min-width: 640px) {
+    .attribution {
+      font-size: 2rem;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
+
+.image__pattern-bottom {
+  position: absolute;
+  bottom: -20%;
+  right: -30%;
+  width: 45rem; }
+
+.image__pattern-top {
+  width: 45rem;
+  position: absolute;
+  top: -20%;
+  left: -30%; }
